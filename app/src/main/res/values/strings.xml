@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Producto</string>
+    <string name="tv_productos">PRODUCTOS</string>
+    <string name="tv_codigo">Codigo</string>
+    <string name="hint_codigo_del_producto">Codigo del producto</string>
+    <string name="tv_descripcion">Descripción</string>
+    <string name="hint_producto">Producto</string>
+    <string name="tv_precio">Precio</string>
+    <string name="hint_precio">Precio</string>
+    <string name="btn_alta">Ingresar nuevo producto</string>
+    <string name="btn_consultar_codigo">Consultar por código</string>
+    <string name="btn_consultar_descripcion">Consultar por descripción</string>
+    <string name="btn_modificar">Modificar producto</string>
+    <string name="btn_eliminar_producto">Eliminar producto</string>
+</resources>
