@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             tienda.close();
 
         } catch (Exception e) {
-            Toast.makeText(this, "ERROR " + e.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR " + e, Toast.LENGTH_SHORT).show();
         }
         //Borramos los valores que contenian los EditText
         etCodigo.setText("");
@@ -113,14 +112,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Debe introducir el código del producto", Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
-            Toast.makeText(this, "ERROR " + e.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR " + e, Toast.LENGTH_SHORT).show();
         }
     }
 
     //Modificar producto
     public void Modificar(View v){
 
-        Button modificar = findViewById(R.id.btn_modificar);
         //Establecemos conexion con la BD en modo escritura
         try {
         AdminBD admin = new AdminBD(this);
@@ -147,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Ingresa los datos completos", Toast.LENGTH_SHORT).show();
             }
         }catch (Exception e){
-            Toast.makeText(this, "ERROR " + e.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR " + e, Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -175,8 +173,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "ERROR AL TRATAR DE ELIMINAR EL PRODUCTO", Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
-            Toast.makeText(this, "ERROR " + e.toString(), Toast.LENGTH_SHORT).show();
-        } ;
+            Toast.makeText(this, "ERROR " + e, Toast.LENGTH_SHORT).show();
+        }
     }
 }
 
